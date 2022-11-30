@@ -21,7 +21,8 @@ SELECT * FROM matches WHERE hometeam = 'Barcelona' OR awayteam = 'Barcelona'
 3) What are the names of the Scottish divisions included?
 
 ```sql
-SELECT * FROM divisions where country = 'Scotland'
+
+SELECT NAME FROM divisons WHERE country = 'Scotland';
 
 
 ```
@@ -29,7 +30,8 @@ SELECT * FROM divisions where country = 'Scotland'
 4) Find the division code for the Bundesliga. Use that code to find out how many matches Freiburg have played in the Bundesliga since the data started being collected.
 
 ```sql
-SELECT * FROM divisions WHERE name = 'Bundesliga'
+SELECT code FROM divisions WHERE name = 'Bundesliga';
+SELECT COUNT(*) FROM matches WHERE division_code = 'D1' AND (hometeam = 'Freiburg' OR awayteam = 'Freiburg');
 
 
 ```
@@ -37,7 +39,7 @@ SELECT * FROM divisions WHERE name = 'Bundesliga'
 5) Find the unique names of the teams which include the word "City" in their name (as entered in the database)
 
 ```sql
-<! 
+<! SELECT DISTINCT hometeam FROM matches WHERE hometeam LIKE 'City%';
 
 
 ```
@@ -45,7 +47,7 @@ SELECT * FROM divisions WHERE name = 'Bundesliga'
 6) How many different teams have played in matches recorded in a French division?
 
 ```sql
-<!-- Copy solution here -->
+<!
 
 
 ```
