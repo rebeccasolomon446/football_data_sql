@@ -5,7 +5,7 @@ Each of the questions/tasks below can be answered using a `SELECT` query. When y
 1) Find all the matches from 2017.
 
 ```sql
-<! SELECT * FROM matches WHERE season = 2017;
+SELECT * FROM matches WHERE season = 2017;
 
 
 ```
@@ -13,7 +13,7 @@ Each of the questions/tasks below can be answered using a `SELECT` query. When y
 2) Find all the matches featuring Barcelona.
 
 ```sql
-<! SELECT * FROM matches WHERE hometeam = 'Barcelona' OR awayteam = 'Barcelona'
+SELECT * FROM matches WHERE hometeam = 'Barcelona' OR awayteam = 'Barcelona'
 
 
 ```
@@ -21,7 +21,7 @@ Each of the questions/tasks below can be answered using a `SELECT` query. When y
 3) What are the names of the Scottish divisions included?
 
 ```sql
-<! SELECT * FROM divisions where country = 'Scotland'
+SELECT * FROM divisions where country = 'Scotland'
 
 
 ```
