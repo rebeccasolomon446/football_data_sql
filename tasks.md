@@ -65,15 +65,16 @@ SELECT * FROM matches where (hometeam = 'Swansea' AND awayteam = 'Huddersfield')
 
 ```sql
 SELECT code FROM divisions WHERE name = 'Eredivisie';
-SELECT COUNT(*) FROM matches WHERE ftr = 'D';
-
+SELECT COUNT(*) FROM matches WHERE division_code = 'N1' AND ftr = 'D' AND season BETWEEN '2010' AND '2015'
+ 
 
 ```
 
 9) Select the matches played in the Premier League in order of total goals scored from highest to lowest. Where there is a tie the match with more home goals should come first.
 
 ```sql
-<!-- Copy solution here -->
+SELECT code FROM divisions WHERE name = 'Premier League';
+SELECT COUNT(*) FROM matches WHERE division_code = 'EO' B
 
 
 ```
