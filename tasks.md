@@ -48,7 +48,7 @@ SELECT DISTINCT hometeam FROM matches WHERE hometeam LIKE 'City%';
 
 ```sql
 SELECT code FROM divisions WHERE country = 'France';
-SELECT COUNT (hometeam) FROM matches WHERE division_code = 'F1' OR division_code = 'F2'
+SELECT COUNT (hometeam) FROM matches WHERE division_code = 'F1' OR division_code = 'F2';
 
 
 ```
@@ -56,7 +56,7 @@ SELECT COUNT (hometeam) FROM matches WHERE division_code = 'F1' OR division_code
 7) Have Huddersfield played Swansea in the period covered?
 
 ```sql
-<!-- Copy solution here -->
+SELECT * FROM matches where (hometeam = 'Swansea' AND awayteam = 'Huddersfield') OR (hometeam = 'Huddersfield' AND awayteam = 'Swansea')
 
 
 ```
