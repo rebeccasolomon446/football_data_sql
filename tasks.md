@@ -5,7 +5,7 @@ Each of the questions/tasks below can be answered using a `SELECT` query. When y
 1) Find all the matches from 2017.
 
 ```sql
-<!-- Copy solution here -->
+<! SELECT * FROM matches WHERE season = 2017;
 
 
 ```
@@ -13,7 +13,7 @@ Each of the questions/tasks below can be answered using a `SELECT` query. When y
 2) Find all the matches featuring Barcelona.
 
 ```sql
-<!-- Copy solution here -->
+<! 
 
 
 ```
@@ -29,7 +29,7 @@ Each of the questions/tasks below can be answered using a `SELECT` query. When y
 4) Find the division code for the Bundesliga. Use that code to find out how many matches Freiburg have played in the Bundesliga since the data started being collected.
 
 ```sql
-<!-- Copy solution here -->
+<! 
 
 
 ```
