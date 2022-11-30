@@ -57,6 +57,7 @@ SELECT COUNT (hometeam) FROM matches WHERE division_code = 'F1' OR division_code
 
 ```sql
 SELECT COUNT(*) FROM matches where (hometeam = 'Swansea' AND awayteam = 'Huddersfield') OR (hometeam = 'Huddersfield' AND awayteam = 'Swansea');
+-- yes, 12 games
 
 
 ```
@@ -74,7 +75,7 @@ SELECT COUNT(*) FROM matches WHERE division_code = 'N1' AND ftr = 'D' AND season
 
 ```sql
 SELECT code FROM divisions WHERE name = 'Premier League';
-SELECT COUNT(*) FROM matches WHERE division_code = 'EO' B
+SELECT * FROM matches WHERE division_code = 'E0' ORDER BY fthg + ftag DESC;  
 
 
 ```
