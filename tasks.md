@@ -22,7 +22,7 @@ SELECT * FROM matches WHERE hometeam = 'Barcelona' OR awayteam = 'Barcelona'
 
 ```sql
 
-SELECT NAME FROM divisons WHERE country = 'Scotland';
+SELECT NAME FROM divisions WHERE country = 'Scotland';
 
 
 ```
