@@ -39,7 +39,7 @@ SELECT COUNT(*) FROM matches WHERE division_code = 'D1' AND (hometeam = 'Freibur
 5) Find the unique names of the teams which include the word "City" in their name (as entered in the database)
 
 ```sql
-SELECT DISTINCT hometeam FROM matches WHERE hometeam LIKE 'City%';
+SELECT DISTINCT hometeam FROM matches WHERE hometeam LIKE '%City%';
 
 
 ```
