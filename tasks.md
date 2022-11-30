@@ -29,7 +29,7 @@ SELECT * FROM divisions where country = 'Scotland'
 4) Find the division code for the Bundesliga. Use that code to find out how many matches Freiburg have played in the Bundesliga since the data started being collected.
 
 ```sql
-<! 
+SELECT * FROM divisions WHERE name = 'Bundesliga'
 
 
 ```
@@ -37,7 +37,7 @@ SELECT * FROM divisions where country = 'Scotland'
 5) Find the unique names of the teams which include the word "City" in their name (as entered in the database)
 
 ```sql
-<!-- Copy solution here -->
+<! 
 
 
 ```
