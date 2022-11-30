@@ -56,7 +56,7 @@ SELECT COUNT (hometeam) FROM matches WHERE division_code = 'F1' OR division_code
 7) Have Huddersfield played Swansea in the period covered?
 
 ```sql
-SELECT * FROM matches where (hometeam = 'Swansea' AND awayteam = 'Huddersfield') OR (hometeam = 'Huddersfield' AND awayteam = 'Swansea')
+SELECT COUNT(*) FROM matches where (hometeam = 'Swansea' AND awayteam = 'Huddersfield') OR (hometeam = 'Huddersfield' AND awayteam = 'Swansea');
 
 
 ```
@@ -65,7 +65,7 @@ SELECT * FROM matches where (hometeam = 'Swansea' AND awayteam = 'Huddersfield')
 
 ```sql
 SELECT code FROM divisions WHERE name = 'Eredivisie';
-SELECT COUNT(*) FROM matches WHERE division_code = 'N1' AND ftr = 'D' AND season BETWEEN '2010' AND '2015'
+SELECT COUNT(*) FROM matches WHERE division_code = 'N1' AND ftr = 'D' AND season BETWEEN '2010' AND '2015';
  
 
 ```
