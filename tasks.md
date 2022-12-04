@@ -48,8 +48,8 @@ SELECT DISTINCT hometeam FROM matches WHERE hometeam LIKE '%City%';
 
 ```sql
 SELECT code FROM divisions WHERE country = 'France';
-SELECT COUNT (hometeam) FROM matches WHERE division_code = 'F1' OR division_code = 'F2';
-
+SELECT COUNT (DISTINCT hometeam) FROM matches WHERE division_code = 'F1' OR division_code = 'F2';
+-- Instead of WHERE division_code = 'F1' OR division_code = 'F2', could write WHERE division IN('F1', 'F2') 
 
 ```
 
